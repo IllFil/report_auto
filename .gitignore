@@ -1,3 +1,6 @@
-
+.env
 /.idea
 *.mp3
+src/___init___.py
+src/audio_to_text/__pycache__/whisper.cpython-311.pyc
+/src/llm/__pycache__
