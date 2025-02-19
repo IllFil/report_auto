@@ -31,5 +31,5 @@ def get_transcript(path):
         device=device,
     )
 
-    result = pipe(path)
+    result = pipe(path, generate_kwargs={"language": "english"})
     return result["text"]
