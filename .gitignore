@@ -5,3 +5,7 @@ src/___init___.py
 src/audio_to_text/__pycache__/whisper.cpython-311.pyc
 /src/llm/__pycache__
 /src/utils/__pycache__
+
+/output
+transcript.pdf
+/voice_lab

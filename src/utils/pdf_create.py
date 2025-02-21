@@ -42,7 +42,7 @@ def save_pdf_transcript(filename: str, title: str, content) -> None:
         print(f"Saved {filename}")
 
 
-def model_report_pdf(filename: str, report) -> None:
+def model_report_pdf(report) -> None:
         """
         Create a nicely formatted PDF report for the model output.
 
@@ -98,6 +98,6 @@ def model_report_pdf(filename: str, report) -> None:
         write_section("Results", report.get("results", []))
         write_section("Discussion", report.get("discussion", ""))
         write_section("Conclusion", report.get("conclusion", ""))
-
+        filename = f"report_{title}.pdf"
         pdf.output(filename)
         print(f"Saved pretty report as {filename}")
